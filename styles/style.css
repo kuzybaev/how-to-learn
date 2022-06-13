@@ -7,19 +7,79 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
+  border: 1px solid red;
+ }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
   /* выше установили ограничения для секции */
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.logo {
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_header {
+  border: 1px solid red;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  border: 1px solid red;
+  width: 730px;
+  margin-left: 64px;
+  z-index: 2;
+
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 700;
+}
+
+.header__subtitle {
+  border: 1px solid red;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  z-index: 2;
+
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.header__link {
+  display: inline-flex;
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.header__main-illustration {
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  z-index: 1;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */

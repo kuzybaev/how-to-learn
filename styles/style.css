@@ -18,6 +18,7 @@
   align-items: center;
   position: relative;
   background-color: #f2f2f2;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -54,10 +55,8 @@
 }
 
 .header__link {
-  display: inline-flex;
   text-decoration: none;
   color: #2f80ed;
-  margin: 0;
 }
 
 .header__main-illustration {
@@ -79,33 +78,45 @@
 }
 
 .description {
-  margin: 100px 0;
   display: flex;
+  justify-content: center;
 }
 
 .two-columns {
-  border: 1px solid red;
+  margin: 100px 0;
   width: 80%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  }
+}
 
 .two-columns__brief {
-  border: 1px solid red;
   width: 175px;
+  margin: 0;
+  color: ;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
 }
 
 .two-columns__main-text {
-  border: 1px solid red;
   width: 80%;
   min-width: 784px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
 .two-columns__paragraph {
-  border: 1px solid red;
+  margin: 0 0 30px 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 

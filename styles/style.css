@@ -7,8 +7,7 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  border: 1px solid red;
- }
+}
 
 .header {
   height: 100vh;
@@ -28,16 +27,14 @@
 }
 
 .logo_place_header {
-  border: 1px solid red;
   position: absolute;
   top: 30px;
   left: 64px;
 }
 
 .header__title {
-  border: 1px solid red;
   width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   z-index: 2;
 
   line-height: 96px;
@@ -46,7 +43,6 @@
 }
 
 .header__subtitle {
-  border: 1px solid red;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -61,10 +57,10 @@
   display: inline-flex;
   text-decoration: none;
   color: #2f80ed;
+  margin: 0;
 }
 
 .header__main-illustration {
-  border: 1px solid red;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -81,6 +77,37 @@
   top: 64px;
   right: 0;
 }
+
+.description {
+  margin: 100px 0;
+  display: flex;
+}
+
+.two-columns {
+  border: 1px solid red;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+.two-columns__brief {
+  border: 1px solid red;
+  width: 175px;
+}
+
+.two-columns__main-text {
+  border: 1px solid red;
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+}
+
+.two-columns__paragraph {
+  border: 1px solid red;
+}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
